@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/inputmask.min.js" defer></script>
+    <script src="js/just-validate.production.min.js" defer></script>
+    <script src="js/cart.js" defer></script>
+
+</head>
+<body>
+    <div class="cart">
+        <div class="cart-container">
+            <div class="cart-wrapper">
+                <p class="cart__element">Secure Checkout</p>
+
+                <div class="cart-cart-pink">
+
+                <div class="cart__wrap-img">
+                    <img src="img/cart-visa.png" alt="надпись виза" class="cart__visa" width="67" height="28">
+                    <img src="img/cart-mc.png" alt="логотип красный с желтым ромбом" class="cart__mc"  width="67" height="28">
+                </div>
+                
+                <p class="cart__text-num">xxxx xxxx xxxx 4444</p>
+
+                <div class="cart__name-num">
+                    <p class="cart__elem-num">Leskin Maksim</p>
+                    <p class="cart__elem-number">04/24</p>
+                </div>
+
+                </div>
+
+                <div class="cart__btn">
+                    <button class="cart__btn-new-cart crt-bt">
+                        <img src="img/new-card.svg" alt="значек карты" class="cart__img-new" width="29" height="30">
+                        <span class="cart__img-te">Add new card</span>
+                    </button>
+
+                    <button class="cart__scan crt-bt">
+                        <img src="img/scan-add.svg" alt="Значек для сканирования" class="cart__img-scan" width="29" height="30">
+                        <span class="cart__elem-scan">Scan & Add</span>
+                    </button>
+                </div>
+
+                <form action="#" method="POST" class="cart__form" id="form">
+
+                    <div class="cart__name">
+                        <label class="cart__lb lb-name">Card Holder
+                            <input type="text" name="name" class="cart__input-name" placeholder="Leskin Maksim" data-validate-field="name" id="cartName">
+                            
+                        </label>
+                    </div>
+
+                    <div class="cart__number">
+                        <label class="cart__lb lb-number">Card Number
+                            <input type="text" name="number" class="cart__input-number" placeholder="xxxx xxxx xxxx 4444" data-validate-field="number" id="cartNumber">
+                            
+                        </label>
+                    </div>
+
+
+                    <div class="cart__inp-num">
+                        <div class="cr-in cr-in-left">
+                            <label class="cart__lb cart__label">Card Expiry
+                                <input type="text" name="number" class="cart__inp-num-one cr-i" placeholder="04 / 24" data-validate-field="date" id="cartDate">
+                            </label>
+                        </div>
+
+                        <div class="cr-in cr-in-right">
+                            <label class="cart__lb cart__label">CVV
+                                <input type="text" name="number" class="cart__inp-num-two cr-i" placeholder="xxx" data-validate-field="cvv" id="cartCv"> 
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="cart__form-btn">
+                        <button class="cart__btn-check" type="submit">CHECK OUT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
